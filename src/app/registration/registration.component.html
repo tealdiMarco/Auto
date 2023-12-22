@@ -1,0 +1,169 @@
+<h1 class="mt-2 mb-2 p-4 bg-dark text-danger" style="text-align: center;"><b>Registration</b></h1>
+<form novalidate [formGroup]="reactiveForm" > <!-- PER USARE FORMGROUP BISOGNA ANDARE IN APP MODULE-->
+    <div class="form-row center">
+        <div class="col-md-4 mb-3">
+            <label for="cod_fiscale"><b>Codice Fiscale</b></label>
+            <input type="text" 
+                class="form-control" 
+                id="cod_fiscale" 
+                name="cod_fiscale"
+                placeholder="inserisci il codice fiscale"
+                formControlName="cod_fiscale"
+                [ngClass]="{'is-invalid': reactiveForm.controls['cod_fiscale'].invalid && 
+                                            reactiveForm.controls['cod_fiscale'].dirty,
+                             'is-valid': reactiveForm.controls['cod_fiscale'].valid && 
+                                            reactiveForm.controls['cod_fiscale'].dirty}">
+                <div *ngIf="reactiveForm.controls['cod_fiscale'].errors && reactiveForm.controls['cod_fiscale'].dirty" class="invalid-feedback">
+                    <p *ngIf="reactiveForm.controls['cod_fiscale'].errors['required']">
+                        * campo obbligatorio
+                    </p>
+                </div>
+        </div>
+        <div class="col-md-4 mb-2">
+            <label for="mail"><b>Mail</b></label>
+            <input type="mail" 
+                class="form-control" 
+                id="mail" 
+                name="mail"
+                formControlName="mail"
+                placeholder="inserisci la mail"
+                [ngClass]="{'is-invalid': reactiveForm.controls['mail'].invalid && 
+                                            reactiveForm.controls['mail'].dirty,
+                             'is-valid': reactiveForm.controls['mail'].valid && 
+                                            reactiveForm.controls['mail'].dirty}"> <!--accedo al form tramite reactiveform-->
+
+            <div *ngIf="reactiveForm.controls['mail'].errors && reactiveForm.controls['mail'].dirty" class="invalid-feedback">
+                <p *ngIf="reactiveForm.controls['mail'].errors['required']">
+                    * campo obbligatorio
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-2">
+            <label for="password"><b>Password</b></label>
+            <input type="password" 
+                class="form-control" 
+                id="password" 
+                name="password"
+                formControlName="password"
+                placeholder="inserisci la password"
+                [ngClass]="{'is-invalid': reactiveForm.controls['password'].invalid && 
+                                            reactiveForm.controls['password'].dirty,
+                             'is-valid': reactiveForm.controls['password'].valid && 
+                                            reactiveForm.controls['password'].dirty}"> <!--accedo al form tramite reactiveform-->
+
+            <div *ngIf="reactiveForm.controls['password'].errors && reactiveForm.controls['password'].dirty" class="invalid-feedback">
+                <p *ngIf="reactiveForm.controls['password'].errors['required']">
+                    * campo obbligatorio
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-2">
+            <label for="conf_password"><b>Conferma password</b></label>
+            <input type="password" 
+                class="form-control" 
+                id="conf_password" 
+                name="conf_password"
+                formControlName="conf_password"
+                placeholder="conferma la password"
+                [ngClass]="{'is-invalid': reactiveForm.controls['conf_password'].invalid && 
+                                            reactiveForm.controls['conf_password'].dirty ||
+                                            reactiveForm.controls['conf_password'].value != reactiveForm.controls['password'].value,
+                                            
+                             'is-valid': reactiveForm.controls['conf_password'].valid && 
+                                            reactiveForm.controls['conf_password'].dirty &&
+                                            reactiveForm.controls['conf_password'].value == reactiveForm.controls['password'].value}"> <!--accedo al form tramite reactiveform-->
+
+            <div *ngIf="reactiveForm.controls['conf_password'].errors && reactiveForm.controls['conf_password'].dirty" class="invalid-feedback">
+                <p *ngIf="reactiveForm.controls['conf_password'].errors['required']">
+                    * campo obbligatorio
+                </p>
+            </div>
+            <p *ngIf="reactiveForm.controls['conf_password'].value != reactiveForm.controls['password'].value" class="invalid-feedback">
+                * Password diverse
+            </p>
+        </div>
+        <div class="col-md-4 mb-2">
+            <label for="nome"><b>Nome</b></label>
+            <input type="text" 
+                class="form-control" 
+                id="nome" 
+                name="nome"
+                formControlName="nome"
+                placeholder="inserisici il nome"
+                [ngClass]="{'is-invalid': reactiveForm.controls['nome'].invalid && 
+                                            reactiveForm.controls['nome'].dirty,
+                             'is-valid': reactiveForm.controls['nome'].valid && 
+                                            reactiveForm.controls['nome'].dirty}"> <!--accedo al form tramite reactiveform-->
+
+            <div *ngIf="reactiveForm.controls['nome'].errors && reactiveForm.controls['nome'].dirty" class="invalid-feedback">
+                <p *ngIf="reactiveForm.controls['nome'].errors['required']">
+                    * campo obbligatorio
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-2">
+            <label for="cognome"><b>Cognome</b></label>
+            <input type="text" 
+                class="form-control" 
+                id="cognome" 
+                name="cognome"
+                formControlName="cognome"
+                placeholder="inserisici il cognome"
+                [ngClass]="{'is-invalid': reactiveForm.controls['cognome'].invalid && 
+                                            reactiveForm.controls['cognome'].dirty,
+                             'is-valid': reactiveForm.controls['cognome'].valid && 
+                                            reactiveForm.controls['cognome'].dirty}"> <!--accedo al form tramite reactiveform-->
+
+            <div *ngIf="reactiveForm.controls['cognome'].errors && reactiveForm.controls['cognome'].dirty" class="invalid-feedback">
+                <p *ngIf="reactiveForm.controls['cognome'].errors['required']">
+                    * campo obbligatorio
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-2">
+            <label for="indirizzo"><b>Indirizzo</b></label>
+            <input type="text" 
+                class="form-control" 
+                id="indirizzo" 
+                name="indirizzo"
+                formControlName="indirizzo"
+                placeholder="inserisici l' indirizzo">
+        </div>
+        <div class="col-md-4 mb-2">
+            <div class="row">
+                <div class="col-sm-6">
+                    <button type="submit" class="btn mt-3 mb-3 w-100"
+                    [ngClass]="{
+                        'btn-secondary': !(reactiveForm.valid && reactiveForm.controls['conf_password'].value == reactiveForm.controls['password'].value),
+                        'btn-primary': reactiveForm.valid && reactiveForm.controls['conf_password'].value == reactiveForm.controls['password'].value}"
+                        [disabled]="!(reactiveForm.valid && reactiveForm.controls['conf_password'].value == reactiveForm.controls['password'].value)"
+                        (click)="confirm()">
+                        Registrati
+                    </button>
+                </div>
+                <div class="col-sm-6">
+                    <button type="reset" class="w-100 mb-3 mt-3 btn btn-danger">
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div class="row center">
+    <div *ngIf=" End == 'è andata a buon fine' " >
+        <p style="color: green;">REGISTRAZIONE COMPLETATA</p>
+    </div>
+    <div *ngIf="End == 'non è andata a buon fine'">
+        <p style="color: red;">REGISTRAZIONE NON ANDATA A BUON FINE</p>
+    </div>
+</div>
+
+<div class="row center">
+        
+    <button class="btn btn-dark footer" (click)="back()">Esci</button>
+</div>
+
+    
+

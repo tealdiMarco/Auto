@@ -1,0 +1,39 @@
+<div *ngIf="listaCars.length!=0">
+    <div class="row cardsheesh">
+            <div class="card myCard" *ngFor="let car of listaCars">
+                <div class="card-title">
+                    <h3>{{car.marca}} {{car.modello}}</h3>
+                    <img class="img" src="assets/img/{{car.marca}}_{{car.modello}}.jpg" (click)="swag(car.marca,car.modello)">
+                </div>
+                <div class="card-body" *ngIf="thing.length != 0 && car.id_auto==thing.id_auto">
+                    <h3 class="card-title">ID car : {{thing.id_auto}}</h3>
+                    <h4 class="card-text">Marca : {{thing.marca}}</h4>
+                    <h4 class="card-text">Modello : {{thing.modello}}</h4>
+                    <h4 class="card-text">Costo : {{thing.costo}}</h4>
+                    <h4 class="card-text">Categoria : {{thing.categoria}}</h4>
+                    <h4 class="card-text">Carburante : {{thing.alimentazione}}</h4>
+                    <br>
+                    <h4 class="card-text">DATI TECNICI :</h4>
+                    <li class="card-text">Potenza : {{thing.dat_tecnici.potenza}}</li>
+                    <li class="card-text">Consumo : {{thing.dat_tecnici.consumi}}</li>
+                    <button class="btn btn-dark" (click)="buyCar()">COMPRA</button>
+                    <button class="btn btn-dark" (click)="closeCard()">ESCI</button>
+
+                    <div *ngIf="strWriteResult == 'è andata a buon fine'">
+                        <p style="color: green;">Fattura Eseguita su File Auto_vendute</p>
+                    </div>
+                    <div *ngIf="strWriteResult == 'non è andata a buon fine'">
+                        <p style="color: red;">transazione andata in errore!</p>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+    <div class="row center">
+        
+        <button class="btn btn-dark footer" (click)="esci()">Esci</button>
+    </div>
+</div>
+
+
+    

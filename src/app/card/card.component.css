@@ -1,0 +1,41 @@
+.buton{
+    margin: 10px;
+    display: block;
+}
+.myCard{
+    width:auto;
+    height:auto;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 15px;
+}
+.img{
+    width: 300px;
+    height: 300px;
+    display: block;
+}
+
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.all{
+    width: 100%;
+    height: 100%;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.cardsheesh{
+    display: flex;
+    flex-direction: row;
+}

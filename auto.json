@@ -1,0 +1,362 @@
+[
+  {
+    "id_auto": 1,
+    "marca": "Fiat",
+    "modello": "500",
+    "costo": 15000,
+    "categoria": "Berlina",
+    "alimentazione": "Benzina",
+    "dat_tecnici": {
+      "potenza": 60,
+      "consumi": 20
+    }
+  },
+  {
+    "id_auto": 2,
+    "marca": "Ford",
+    "modello": "Focus",
+    "costo": 20000,
+    "categoria": "Berlina",
+    "alimentazione": "Diesel",
+    "dat_tecnici": {
+      "potenza": 85,
+      "consumi": 18
+    }
+  },
+  {
+    "id_auto": 3,
+    "marca": "Renault",
+    "modello": "Clio",
+    "costo": 18000,
+    "categoria": "Berlina",
+    "alimentazione": "Benzina",
+    "dat_tecnici": {
+      "potenza": 66,
+      "consumi": 22
+    }
+  },
+  {
+    "id_auto": 4,
+    "marca": "Dacia",
+    "modello": "Duster",
+    "costo": 22000,
+    "categoria": "SUV",
+    "alimentazione": "GPL",
+    "dat_tecnici": {
+      "potenza": 81,
+      "consumi": 15
+    }
+  },
+  {
+    "id_auto": 5,
+    "marca": "BMW",
+    "modello": "X3",
+    "costo": 40000,
+    "categoria": "SUV",
+    "alimentazione": "Diesel",
+    "dat_tecnici": {
+      "potenza": 140,
+      "consumi": 14
+    }
+  },
+  {
+    "id_auto": 6,
+    "marca": "Fiat",
+    "modello": "Panda",
+    "costo": 12000,
+    "categoria": "Berlina",
+    "alimentazione": "Metano",
+    "dat_tecnici": {
+      "potenza": 52,
+      "consumi": 25
+    }
+  },
+  {
+    "id_auto": 7,
+    "marca": "Ford",
+    "modello": "EcoSport",
+    "costo": 25000,
+    "categoria": "SUV",
+    "alimentazione": "Benzina",
+    "dat_tecnici": {
+      "potenza": 92,
+      "consumi": 17
+    }
+  },
+  {
+    "id_auto": 8,
+    "marca": "Renault",
+    "modello": "Megane",
+    "costo": 23000,
+    "categoria": "Berlina",
+    "alimentazione": "Diesel",
+    "dat_tecnici": {
+      "potenza": 110,
+      "consumi": 16
+    }
+  },
+  {
+    "id_auto": 9,
+    "marca": "Dacia",
+    "modello": "Logan",
+    "costo": 15000,
+    "categoria": "Berlina",
+    "alimentazione": "Benzina",
+    "dat_tecnici": {
+      "potenza": 75,
+      "consumi": 21
+    }
+  },
+  {
+    "id_auto": 10,
+    "marca": "BMW",
+    "modello": "X5",
+    "costo": 50000,
+    "categoria": "SUV",
+    "alimentazione": "Ibrida",
+    "dat_tecnici": {
+      "potenza": 200,
+      "consumi": 12
+    }
+  },
+  {
+    "id_auto": 11,
+    "marca": "Fiat",
+    "modello": "Tipo",
+    "costo": 19000,
+    "categoria": "Berlina",
+    "alimentazione": "Diesel",
+    "dat_tecnici": {
+      "potenza": 96,
+      "consumi": 19
+    }
+  },
+  {
+    "id_auto": 12,
+    "marca": "Ford",
+    "modello": "Kuga",
+    "costo": 28000,
+    "categoria": "SUV",
+    "alimentazione": "Benzina",
+    "dat_tecnici": {
+      "potenza": 121,
+      "consumi": 16
+    }
+  },
+  {
+    "id_auto": 13,
+    "marca": "Renault",
+    "modello": "Captur",
+    "costo": 21000,
+    "categoria": "Cross-over",
+    "alimentazione": "Benzina",
+    "dat_tecnici": {
+      "potenza": 88,
+      "consumi": 20
+    }
+  },
+  {
+    "id_auto": 14,
+    "marca": "Dacia",
+    "modello": "Sandero",
+    "costo": 13000,
+    "categoria": "Berlina",
+    "alimentazione": "GPL",
+    "dat_tecnici": {
+      "potenza": 54,
+      "consumi": 24
+    }
+  },
+  {
+    "id_auto": 15,
+    "marca": "BMW",
+    "modello": "3 Series",
+    "costo": 35000,
+    "categoria": "Berlina",
+    "alimentazione": "Diesel",
+    "dat_tecnici": {
+      "potenza": 120,
+      "consumi": 15
+    }
+  },
+  {
+    "id_auto": 16,
+    "marca": "Fiat",
+    "modello": "124 Spider",
+    "costo": 25000,
+    "categoria": "Berlina",
+    "alimentazione": "Benzina",
+    "dat_tecnici": {
+      "potenza": 103,
+      "consumi": 18
+    }
+  },
+  {
+    "id_auto": 17,
+    "marca": "Ford",
+    "modello": "Fiesta",
+    "costo": 17000,
+    "categoria": "Berlina",
+    "alimentazione": "Benzina",
+    "dat_tecnici": {
+      "potenza": 74,
+      "consumi": 22
+    }
+  },
+  {
+    "id_auto": 18,
+    "marca": "Renault",
+    "modello": "Kadjar",
+    "costo": 26000,
+    "categoria": "Cross-over",
+    "alimentazione": "Diesel",
+    "dat_tecnici": {
+      "potenza": 96,
+      "consumi": 17
+    }
+  },
+  {
+    "id_auto": 19,
+    "marca": "Dacia",
+    "modello": "Dokker",
+    "costo": 16000,
+    "categoria": "Station-wagon",
+    "alimentazione": "Benzina",
+    "dat_tecnici": {
+      "potenza": 66,
+      "consumi": 23
+    }
+  },
+  {
+    "id_auto": 20,
+    "marca": "BMW",
+    "modello": "X1",
+    "costo": 38000,
+    "categoria": "SUV",
+    "alimentazione": "Ibrida",
+    "dat_tecnici": {
+      "potenza": 160,
+      "consumi": 13
+    }
+  },
+  {
+    "id_auto": 21,
+    "marca": "Fiat",
+    "modello": "Bravo",
+    "costo": 20000,
+    "categoria": "Berlina",
+    "alimentazione": "Diesel",
+    "dat_tecnici": {
+      "potenza": 88,
+      "consumi": 19
+    }
+  },
+  {
+    "id_auto": 22,
+    "marca": "Ford",
+    "modello": "Mustang",
+    "costo": 45000,
+    "categoria": "Berlina",
+    "alimentazione": "Benzina",
+    "dat_tecnici": {
+      "potenza": 310,
+      "consumi": 10
+    }
+  },
+  {
+    "id_auto": 23,
+    "marca": "Renault",
+    "modello": "Talisman",
+    "costo": 30000,
+    "categoria": "Berlina",
+    "alimentazione": "Diesel",
+    "dat_tecnici": {
+      "potenza": 118,
+      "consumi": 16
+    }
+  },
+  {
+    "id_auto": 24,
+    "marca": "Dacia",
+    "modello": "Lodgy",
+    "costo": 18000,
+    "categoria": "Station-wagon",
+    "alimentazione": "GPL",
+    "dat_tecnici": {
+      "potenza": 80,
+      "consumi": 21
+    }
+  },
+  {
+    "id_auto": 25,
+    "marca": "BMW",
+    "modello": "4 Series",
+    "costo": 40000,
+    "categoria": "Berlina",
+    "alimentazione": "Benzina",
+    "dat_tecnici": {
+      "potenza": 184,
+      "consumi": 14
+    }
+  },
+  {
+    "id_auto": 26,
+    "marca": "Fiat",
+    "modello": "Punto",
+    "costo": 14000,
+    "categoria": "Berlina",
+    "alimentazione": "Benzina",
+    "dat_tecnici": {
+      "potenza": 57,
+      "consumi": 23
+    }
+  },
+  {
+    "id_auto": 27,
+    "marca": "Ford",
+    "modello": "Ranger",
+    "costo": 30000,
+    "categoria": "Cross-over",
+    "alimentazione": "Diesel",
+    "dat_tecnici": {
+      "potenza": 157,
+      "consumi": 12
+    }
+  },
+  {
+    "id_auto": 28,
+    "marca": "Renault",
+    "modello": "Scenic",
+    "costo": 22000,
+    "categoria": "Station-wagon",
+    "alimentazione": "Benzina",
+    "dat_tecnici": {
+      "potenza": 96,
+      "consumi": 18
+    }
+  },
+  {
+    "id_auto": 29,
+    "marca": "Dacia",
+    "modello": "Solenza",
+    "costo": 16000,
+    "categoria": "Berlina",
+    "alimentazione": "Diesel",
+    "dat_tecnici": {
+      "potenza": 78,
+      "consumi": 20
+    }
+  },
+  {
+    "id_auto": 30,
+    "marca": "BMW",
+    "modello": "X7",
+    "costo": 60000,
+    "categoria": "SUV",
+    "alimentazione": "Ibrida",
+    "dat_tecnici": {
+      "potenza": 290,
+      "consumi": 11
+    }
+  }
+]

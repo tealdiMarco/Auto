@@ -1,0 +1,81 @@
+<div *ngIf="login">
+    <h1 class="mt-2 mb-2 p-4 bg-dark text-danger" style="text-align: center;"><b>Login</b></h1>
+    <!-- form login -->
+    <form novalidate [formGroup]="reactiveForm" > <!-- PER USARE FORMGROUP BISOGNA ANDARE IN APP MODULE-->
+        <div class="form-row center">
+            <div class="col-md-4 mb-3">
+                <label for="user"><b>user</b></label>
+                <input type="mail" 
+                    class="form-control" 
+                    id="user" 
+                    name="user"
+                    placeholder="inserisci l'username / mail"
+                    formControlName="user"
+                    [ngClass]="{'is-invalid': reactiveForm.controls['user'].invalid && 
+                                                reactiveForm.controls['user'].dirty,
+                                 'is-valid': reactiveForm.controls['user'].valid && 
+                                                reactiveForm.controls['user'].dirty}">
+                    <div *ngIf="reactiveForm.controls['user'].errors && reactiveForm.controls['user'].dirty" class="invalid-feedback">
+                        <p *ngIf="reactiveForm.controls['user'].errors['required']">
+                            * campo obbligatorio
+                        </p>
+                    </div>
+            </div>
+            <div class="col-md-4 mb-2">
+                <label for="password"><b>password</b></label>
+                <input type="password" 
+                    class="form-control" 
+                    id="password" 
+                    name="password"
+                    formControlName="password"
+                    placeholder="inserisci la password"
+                    [ngClass]="{'is-invalid': reactiveForm.controls['password'].invalid && 
+                                                reactiveForm.controls['password'].dirty,
+                                 'is-valid': reactiveForm.controls['password'].valid && 
+                                                reactiveForm.controls['password'].dirty}"> <!--accedo al form tramite reactiveform-->
+    
+                <div *ngIf="reactiveForm.controls['password'].errors && reactiveForm.controls['password'].dirty" class="invalid-feedback">
+                    <p *ngIf="reactiveForm.controls['password'].errors['required']">
+                        * campo obbligatorio
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-2">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button type="submit" class="btn mt-3 mb-3 w-100"
+                        [ngClass]="{
+                            'btn-secondary': reactiveForm.invalid,
+                            'btn-primary': reactiveForm.valid
+                            }"
+                            [disabled]="reactiveForm.invalid"
+                            (click)="check()">
+                            Login
+                        </button>
+                    </div>
+                    <div class="col-sm-6">
+                        <button type="reset" class="w-100 mb-3 mt-3 btn btn-danger">
+                            Reset
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="center">
+        <button class="btn btn-primary" (click)="Registration()">Registrazione</button>
+    </div>
+</div>
+<div *ngIf="registration">
+    <registration (sendBack)="getBack($event)">
+
+    </registration>
+</div>
+<div *ngIf="car_show">
+    <card [listaCars]="arrayCars" (sendExit)="getExit($event)">
+
+    </card>
+</div>
+<div *ngIf="pError" class="center">
+    <p style="color: red; font: bold;">ERRORE</p>
+</div>
